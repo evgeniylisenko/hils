@@ -4,15 +4,18 @@ $arrayDaysOfWeek = ['Понедельник','Вторник','Среда','Че
 
 $nameList = "Залоловок списка";
 $listType = '<ul>';
+$listType1 = '</ul>';
 
-function listToArray(array $array, string $nameList, string $listType) : string {
+function listToArray(array $array, string $nameList, string $listType, string $listType1) : string {
 
-    $html = $listType;
-    $html .= "<h3>$nameList</h3>";
+		$html = "<h3>$nameList</h3>";
+    $html .= $listType;
 
     foreach ($array as $value) {
         $html .= "<li>$value</li>";
     }
+
+		$html .= $listType1;
 
     return  $html;
 
@@ -32,7 +35,7 @@ function listToArray(array $array, string $nameList, string $listType) : string 
 
 <?php
 
-print_r(listToArray($array,$nameList,$listType));
+print_r(listToArray($array,$nameList,$listType,$listType1));
 ?>
 
 </body>
