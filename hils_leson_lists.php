@@ -37,5 +37,3 @@ function listToArray(array $array, string $nameList, string $listType) : string 
 print_r(listToArray($array,$nameList,$listType));
 ?>
 
-</body>
-</html>
