@@ -4,7 +4,6 @@
 
 $obj = new Router();
 
-// $infoRouter = new core\Router;
 $obj->setRouter([
 	"john" => "18",
 	"lisa" => "28",
