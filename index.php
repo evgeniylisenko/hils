@@ -4,11 +4,11 @@
 
 $obj = new Router();
 
-$infoRouter = new core\Router;
-$infoRouter->setRouter([
+// $infoRouter = new core\Router;
+$obj->setRouter([
 	"john" => "18",
 	"lisa" => "28",
 	"maks" => "21",
 ]);
 print_r('<br />');
-$infoRouter->run();
+$obj->run();
