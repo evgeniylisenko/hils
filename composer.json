@@ -11,4 +11,4 @@
 			"preferred-install": "dist", 
 			"sort-packages": true }, 
 			"autoload": { 
-				"psr-4": { "Core\\": "core/" } } }
+				"psr-4": { "Core\\": "core/", "App\\": "app/" } } }
