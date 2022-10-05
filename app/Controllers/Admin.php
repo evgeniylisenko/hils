@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Admin
+class Admin implements ControllerInterface
 {
 
 	 public function index() { 
