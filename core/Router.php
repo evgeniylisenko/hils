@@ -6,15 +6,20 @@ use App\Controllers\Error;
 class Router { 
 
 	private array $pathParts = []; 
+	private array $config = [];
+
 
 	public function __construct()	{
 			// Получаем URL	
 			$path = substr($_SERVER["REQUEST_URI"],1);
 			// Разбиваем URL на части
 			$this->pathParts = explode("/", $path);
+			$this->config = include_once (__DIR__) . '/../app/config/config.php';
 	}
 
 		public function run() { 
+
+			var_dump($this->config);
 
 				$classPath = 'App\Controllers\\' . $this->getClassName();
 
