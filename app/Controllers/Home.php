@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\User;
-use App\Models\Contact;
+use App\Models\Contacts;
 use Core\View;
 
 class Home implements ControllerInterface
@@ -16,5 +16,14 @@ class Home implements ControllerInterface
 			 View::generate($path, $data);
 
 	 }
+
+	 public function contacts() 
+	 {
+			 $obj = new Contacts();
+		   $path = 'contacts';
+			 $data['contacts'] = $obj->getAll();
+			 View::generate($path, $data);
+	 }
+
 
 }

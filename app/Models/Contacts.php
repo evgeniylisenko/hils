@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Contact { 
+class Contacts { 
 
 	public function getAll(): array { 
 	

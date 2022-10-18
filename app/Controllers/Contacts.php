@@ -1,17 +1,17 @@
 <?php 
 
 namespace App\Controllers;
-use App\Models\Contact;
+use App\Models\Contacts;
 use Core\View;
 
-class Contact
+class Contacts
 {
 
-	 public function indexOne() 
+	 public function contacts() 
 	 {
-			 $obj = new Contact;
+		   $obj = new Contacts();
 		   $path = 'contacts';
-			 $data['contact'] = $obj->getAll();
+			 $data['contacts'] = $obj->getAll();
 			 View::generate($path, $data);
 	 }
 
