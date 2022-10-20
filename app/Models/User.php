@@ -1,17 +1,21 @@
-<?php 
+<?php
 
 namespace App\Models;
 
-class User { 
+use Core\orm\common\Select;
 
-	public function getAll(): array { 
-	
-		return	$arr_user =	[
-			'name' => 'Mukola',
-			'name_1' => 'Mukola one',
-	];
+class User
+{
 
+	public function getUser(): array
+	{
+
+		$select	=	new Select();
+		$select->setTableName('st_users');
+		$data = $select->execute();
+		$users = $data->fetchAll(\PDO::FETCH_ASSOC);
+		
+
+		return $users;
 	}
-
-
 }
