@@ -2,6 +2,8 @@
 
 namespace Core\orm\common;
 
+use Core\orm\common\Connector;
+
 class Select
 {
 

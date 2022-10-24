@@ -27,14 +27,14 @@
 		<main role="main">
 			<div class="jumbotron">
 				<div class="container">
-					<h1 class="display-3">Названия стати</h1>
+				<?php foreach($posts as $post) :?>
+					<h1 class="display-3"><?php echo $post['name'] ?></h1>
 				</div>
 			</div>
 			<div class="container">
 			<br />
 			<div class="row">
 				<div class="post-articel">
-				<?php foreach($posts as $post) :?>
 				<img src="<?php echo $post['img'] ?>" />
 				<p><?php echo $post['description'] ?></p> 
 				<? endforeach ;?>

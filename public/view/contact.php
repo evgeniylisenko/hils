@@ -32,20 +32,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<form>
-				<div class="form-group">
-					<label for="exampleFormControlInput1">Имя</label>
-					<input type="text" class="form-control" placeholder="Введите свое имя">
-				</div>
-				<div class="form-group">
-					<label for="exampleFormControlInput1">Email address</label>
-					<input type="email" class="form-control" placeholder="name@example.com">
-				</div>
-				<div class="form-group">
-					<label for="exampleFormControlTextarea1">Комментарий</label>
-					<textarea class="form-control" rows="3" placeholder="Оставьте свой комментарий"></textarea>
-				</div>
-			</form>
+		<?php include_once __DIR__ . './forms/contacts.php' ?>
 			<ul style="display: flex;justify-content: space-around;">
 			<?php foreach($rows as $contact) : ?>
 					<li><?php echo $contact['address'] ?></li>
