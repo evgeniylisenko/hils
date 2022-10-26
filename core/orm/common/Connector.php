@@ -10,7 +10,7 @@ class Connector
 
 	public function __construct()
 	{
-		$params = include_once (__DIR__) . '/config/params.php';
+		$params = include (__DIR__) . '/config/params.php';
 		$host = $params['host'] ?? '';
 		$dbname = $params['dbname'] ?? '';
 

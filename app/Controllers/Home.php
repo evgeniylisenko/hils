@@ -10,7 +10,7 @@ class Home implements ControllerInterface
 	 public function index() 
 	 { 
 			 $obj = new User;
-			 $data['people'] = $obj->getUser();
+			 $data['people'] = $obj->getUsers();
 			 View::generate('home', $data);
 
 	 }
